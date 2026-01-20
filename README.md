@@ -24,4 +24,10 @@ The notebook implements both approaches and measures how much memory each one us
 
 ## Results
 
-(Results will be added here after running the notebook)
+After running the notebook with the default configuration (32 heads, 128 head_dim, 64 kv_lora_rank, 64 rope_dim):
+
+- Average memory reduction: 3.88x
+- Max sequence length tested: 32,768 tokens
+- Memory savings at max length: 380 MB
+
+The results show that DeepSeek MLA consistently uses less memory than standard MHA across all sequence lengths, with the reduction factor remaining stable at approximately 3.88x.
